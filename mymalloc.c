@@ -1,4 +1,12 @@
+#include <stdio.h>
+
 #include "mymalloc.h"
+#include "subset.h"
+
+#define FALSE 0
+#define TRUE 1
+#define USED FALSE
+#define FREE TRUE
 
 /**
  * The aim of this function is to allocate the memory dynamically.
@@ -7,6 +15,11 @@
  * @return ptr the starting point of the allocated memory.
  */
 void *myalloc(int size) {
+    //returns NULL if the size is less than or equal to 0.
+    if (size <= 0) {
+        return NULL;
+    }
+
     return NULL;
 }
 
