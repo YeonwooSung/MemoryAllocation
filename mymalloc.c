@@ -3,10 +3,20 @@
 #include "mymalloc.h"
 #include "subset.h"
 
+//boolean
 #define FALSE 0
 #define TRUE 1
 #define USED FALSE
 #define FREE TRUE
+
+//the linked list of free memory blocks.
+FreeList *freeList = NULL;
+
+//to reduce the number of mmap calls.
+int lastMappedSize; //TODO choose the initial value of the lastMappedSize.
+
+//Offset size
+#define OFFSET_SIZE sizeof(Header)
 
 /**
  * The aim of this function is to allocate the memory dynamically.
@@ -19,6 +29,12 @@ void *myalloc(int size) {
     if (size <= 0) {
         return NULL;
     }
+
+    /*
+     * The size of the assigned memory block could not be smaller than the size of the offset, as long as
+     * the memory block contains the offset (header) in it.
+     */
+    int requiredSize = size  + OFFSET_SIZE;
 
     return NULL;
 }
