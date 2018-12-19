@@ -5,7 +5,7 @@
 #include <math.h>
 #include <stdint.h>
 
-#include "mymalloc.h"
+#include "mmap_malloc.h"
 
 int *last_address = 0;
 

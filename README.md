@@ -1,9 +1,8 @@
-# mymalloc
-Simple implementation of a memory allocation library similar to malloc.
+# MemoryAllocation
 
 ## 1. Implementing malloc with mmap()
 
-In the mymalloc.c file, I implemented the malloc function with mmap() to allocate memory dynamically by using the virtual memory.
+In the mmap_malloc.c file, I implemented the memory allocating program with mmap() function to allocate memory dynamically by using the virtual memory.
 
 ## 2. Simple and neat malloc with sbrk()
 
