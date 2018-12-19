@@ -16,7 +16,7 @@ The answer is because programmers want to use the memory allocating function whi
 
 Some might say that the memory space of the modern computer is huge enough, thus, just using the standard memory allocation function and method is not a bad way. To be honest, it is neither a bad way nor good way. If you are participating to the project which requires highly efficient memory management algorithm, then you might need to consider to implement an optimised memory allocating function, as well as, a highly efficient memory management microservice software.
 
-It is clear that the programs that I wrote in this project are not highly efficient memory allocators, however, I used some straightforward algorithms for both sbrk() system call and mmap() system call with suitable data structures. I believe that reading the codes that I wrote in this project is a good starting point for the people who wants to implement their own memory allocation function.
+It is clear that the programs that I wrote in this project are not highly efficient memory allocators, however, I used some straightforward algorithms for both sbrk_malloc and mmap_malloc with suitable data structures. I believe that reading the codes that I wrote in this project is a good starting point for the people who wants to implement their own memory allocation function.
 
 ## What is a good design then?
 
