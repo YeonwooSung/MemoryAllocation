@@ -1,10 +1,12 @@
 # MemoryAllocation
 
-## 1. Implementing malloc with mmap()
+## Code
+
+### 1. Implementing malloc with mmap()
 
 In the mmap_malloc.c file, I implemented the memory allocating program with mmap() function to allocate memory dynamically by using the virtual memory.
 
-## 2. Simple and neat malloc with sbrk()
+### 2. Simple and neat malloc with sbrk()
 
 In the simple_malloc.c file, I implemented the malloc function, which is really short and simple. I used the sbrk system call to move the break on the heap to allocate memory dynamically
 
@@ -16,7 +18,7 @@ The answer is because programmers want to use the memory allocating function whi
 
 Some might say that the memory space of the modern computer is huge enough, thus, just using the standard memory allocation function and method is not a bad way. To be honest, it is neither a bad way nor good way. If you are participating to the project which requires highly efficient memory management algorithm, then you might need to consider to implement an optimised memory allocating function, as well as, a highly efficient memory management microservice software.
 
-It is clear that the programs that I wrote in this project are not highly efficient memory allocators, however, I used some straightforward algorithms for both sbrk_malloc and mmap_malloc with suitable data structures. I believe that reading the codes that I wrote in this project is a good starting point for the people who wants to implement their own memory allocation function.
+In fact, the codes that I wrote in this repository are not highly efficient memory allocators. The main aim of the codes in this repository are to show some straightforward algorithms for people who wants to use sbrk (or brk) or mmap system call to implement the custom malloc function. I believe that reading those codes could be a good starting point for the people who wants to implement their own memory allocation function.
 
 ## What is a good design then?
 
